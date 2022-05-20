@@ -9,19 +9,6 @@ public class TorpedoTeszt {
     public static void main(String[] args) {
         
     }
-    public void beker(){
-        int poz;
-        String eredmeny;
-        Scanner sc = new Scanner(System.in);
-        do {
-            System.out.print("lövés: ");
-            poz=sc.nextInt();
-            eredmeny=tesztLoves(poz);
-            System.out.print(eredmeny);
-            System.out.println("");
-        } while (!(eredmeny.equals("talált süllyedt")));
-        System.out.println(hajo.getLepesSzam()+" lövésből");
-    }
     
     public String tesztLoves(int poz){
         String t = hajo.talalat(poz);
