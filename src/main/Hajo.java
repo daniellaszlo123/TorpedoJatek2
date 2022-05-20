@@ -5,12 +5,21 @@ package main;
 public class Hajo {
     private int[] pozicio;
 
-    public Hajo() {
-        this.pozicio = new int[3];
+    public Hajo(int pozicio) {
+        this.pozicio = new int[pozicio];
+        this.pozicio[0]=2;
+        this.pozicio[1]=3;
+        this.pozicio[2]=4;
     }
     
     
     public String talalat(int poz){
-        return "";
+        String talaltE="";
+        for (int i = 0; i < pozicio.length; i++) {
+            if (pozicio[i]==poz) {
+                talaltE="talált";
+            }
+        }
+        return talaltE;
     }
 }

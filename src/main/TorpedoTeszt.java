@@ -4,13 +4,13 @@ package main;
 
 public class TorpedoTeszt {
     private Hajo hajo;
-    public void main(String[] args) {
-        tesztLoves(0);
+    public static void main(String[] args) {
+        new TorpedoTeszt().tesztLoves(4);
     }
     public String tesztLoves(int poz){
-        hajo= new Hajo();
-        String t = hajo.talalat(4);
+        hajo= new Hajo(3);
+        String t = hajo.talalat(poz);
         assert t.equals("talált") : "nem jó a találat ellenőrzése";
-        return "";
+        return t;
     }
 }
